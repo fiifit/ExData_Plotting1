@@ -16,6 +16,6 @@ plot3 <- function() {
         with(data, lines(data$Time, data$Sub_metering_1, col="black"))
         with(data, lines(data$Time, data$Sub_metering_2, col="red"))
         with(data, lines(data$Time, data$Sub_metering_3, col="blue"))
-        legend("topright", lty=1, bty="n", col =c("black","red","blue"),legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+        legend("topright", lty=1, col =c("black","red","blue"),legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
         dev.off() ##Close the PNG file device
 }
